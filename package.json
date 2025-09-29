@@ -1,0 +1,39 @@
+{
+  "name": "ai",
+  "version": "1.0.0",
+  "description": "AI Training Examples",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "npm run build && node --env-file=.env dist/index.js",
+    "dev": "tsx --env-file=.env src/index.ts",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format": "prettier --write src/**/*.ts",
+    "format:check": "prettier --check src/**/*.ts"
+  },
+  "author": "Camilo Gutierrez",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.5.0",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "eslint": "^9.11.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@langchain/langgraph": "^0.4.9",
+    "@langchain/openai": "^0.6.13",
+    "express": "^5.1.0",
+    "langchain": "^0.3.34",
+    "openai": "^5.20.3",
+    "prom-client": "^15.1.3"
+  }
+}
