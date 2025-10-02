@@ -72,6 +72,7 @@ const main = async () => {
     }
 
     console.log(`\n🚀 Starting ${selectedFunction.name}...\n`);
+    console.log('Test function...');
     await selectedFunction.func();
   } catch (error) {
     console.error('Error in main:', error);
